@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Allign-items</title>
+</head>
+<style>
+
+    .container{
+        background-color: black;
+        max-width: 400px;
+        max-height: 400px;
+        border: 1px solid goldenrod;
+        border-radius: 4%;
+        display: flex;
+    }
+
+    .item{
+        margin: 5px;
+        border: 1px solid white;
+        border-radius: 12%;
+        background-color: rgba(176, 196, 222, 0.493);
+        color: black;
+        text-align: center;
+        padding: 5px;
+        flex: 1;
+    }
+
+    .item:hover{
+        background-color: lightsteelblue ;
+    }
+
+
+    .center{
+        align-items: center;
+    }
+
+    .stretch{
+        align-items: stretch;
+    }
+
+    .start{
+        align-items: flex-start;
+    }
+
+    .end{
+        align-items: flex-end;
+    }
+
+    .baseline{
+        align-items: baseline;
+    }
+
+    .column{
+        flex-direction: column;
+    }
+
+</style>
+<body>
+
+    <h1>ROW</h1>
+    <p>Center</p>
+  <section class="container center">
+      <div class="item">Home</div>
+      <div class="item">Sobre. nos e vós</div>
+      <div class="item">Contato</div>
+      <div class="item">Quem somos</div>       
+  </section>
+
+  <p>Stretch</p>
+  <section class="container stretch">
+    <div class="item">Home</div>
+    <div class="item">Sobre nós e vois me ce </div>
+    <div class="item">Contato</div>
+    <div class="item">Quem somos</div>       
+</section>
+
+<p>Flex-start</p>
+<section class="container start">
+    <div class="item">Home</div>
+    <div class="item">Sobre nós e vos me ce do </div>
+    <div class="item">Contato</div>
+    <div class="item">Quem somos</div>       
+</section>
+
+<p>Flex-start</p>
+<section class="container end">
+    <div class="item">Home</div>
+    <div class="item">Sobre nós e vos me ce do </div>
+    <div class="item">Contato</div>
+    <div class="item">Quem somos</div>       
+</section>
+
+<p>Baseline</p>
+<section class="container baseline">
+    <div class="item">Home</div>
+    <div class="item">nós e vos me ce do </div>
+    <div class="item">Contato</div>
+    <div class="item">Quem somos</div>       
+</section>
+
+<h1>COLUMN</h1>
+<p>Center</p>
+  <section class="container center column">
+      <div class="item">Home</div>
+      <div class="item">Sobre. nos e vós</div>
+      <div class="item">Contato</div>
+      <div class="item">Quem somos</div>       
+  </section>
+
+  <p>Stretch</p>
+  <section class="container stretch column">
+    <div class="item">Home</div>
+    <div class="item">Sobre nós e vois me ce </div>
+    <div class="item">Contato</div>
+    <div class="item">Quem somos</div>       
+</section>
+
+<p>Flex-start</p>
+<section class="container start column">
+    <div class="item">Home</div>
+    <div class="item">Sobre nós e vos me ce do </div>
+    <div class="item">Contato</div>
+    <div class="item">Quem somos</div>       
+</section>
+
+<p>Flex-start</p>
+<section class="container end column">
+    <div class="item">Home</div>
+    <div class="item">Sobre nós e vos me ce do </div>
+    <div class="item">Contato</div>
+    <div class="item">Quem somos</div>       
+</section>
+
+<p>Baseline</p>
+<section class="container baseline column">
+    <div class="item">Home</div>
+    <div class="item">nós e vos me ce do </div>
+    <div class="item">Contato</div>
+    <div class="item">Quem somos</div>       
+</section>
+
+<br>
+
+<section class="container">
+    <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex-basis</title>
+</head>
+<style>
+    .container{
+        border: 1px solid white;
+        max-width: 500px;
+        display: flex;
+    }
+
+    .item{
+        background-color: black;
+        border: 1px solid gold;
+        text-align: center;
+        margin: 5px;
+        color: white;
+    }
+
+    .item:hover{
+        background-color: white;
+        color: black;
+    }
+
+    .bAuto{
+        flex-basis: auto;
+    }
+
+    .fg-1{
+        flex-grow: 1;
+    }
+
+    .b-0{
+        flex-basis: 0;
+    }
+
+    .w100{
+        flex-basis: 100px;
+    }
+</style>
+<body>
+
+    <p>Flex basis : auto</p>
+    <div class="container">
+        <div class="item bAuto fg-1">Aaaaaaaaa</div>
+        <div class="item bAuto fg-1">B</div>
+        <div class="item bAuto fg-1">C</div>
+        <div class="item bAuto fg-1">D</div>
+    </div>
+
+    <p>Flex basis : 0</p>
+    <div class="container">
+        <div class="item b-0 fg-1">Aaaaaaaa</div>
+        <div class="item b-0 fg-1">B</div>
+        <div class="item b-0 fg-1">C</div>
+        <div class="item b-0 fg-1">D</div>
+    </div>
+
+    <p>Flex basis + width</p>
+    <div class="container">
+        <div class="item w100 ">A</div>
+        <div class="item w100">B</div>
+        <div class="item w100">C</div>
+        <div class="item w100">D</div>
+    </div>
+</body>
+</html>

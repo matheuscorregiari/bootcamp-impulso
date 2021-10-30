@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align content</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        border: 2px solid goldenrod;
+        height: 400px;
+        max-width: 300px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    .item{
+        background-color: bisque;
+        padding: 5px;
+        flex: 1;
+        margin: 5px;
+        text-align: center;
+        color: black ;
+    }
+
+    .item:hover{
+        background-color: aquamarine;
+        border: 2px solid darkmagenta;
+    }
+    
+    .stretch{
+        align-content: stretch;
+    }
+
+    .center{
+        align-content: center;
+    }
+
+    .flex-start{
+        align-content: flex-start;
+    }
+
+    .flex-end{
+        align-content: flex-end;
+    }
+
+    .space-around{
+        align-content: space-around;
+    }
+
+    .space-between{
+        align-content: space-between;
+    }
+</style>
+<body>
+
+    <p>Stretch</p>
+    <div class="container stretch">
+        <div class="item">Matheus corregiari</div>
+        <div class="item">matheus corregiari</div>
+        <div class="item">matheus corregiari </div>
+        <div class="item">matheus corregiari developer</div>
+        <div class="item">dasjdioajsda</div>
+        <div class="item">lorsaidsaidjsaiodkmas adjajdnjka jasdnjasb</div>
+    </div>
+
+
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">Matheus corregiari</div>
+        <div class="item">matheus corregiari</div>
+        <div class="item">matheus corregiari </div>
+        <div class="item">matheus corregiari developer</div>
+        <div class="item">dasjdioajsda</div>
+        <div class="item">lorsaidsaidjsaiodkmas adjajdnjka jasdnjasb</div>
+    </div>
+
+    <p>Flex-start</p>
+    <div class="container flex-start">
+        <div class="item">Matheus corregiari</div>
+        <div class="item">matheus corregiari</div>
+        <div class="item">matheus corregiari </div>
+        <div class="item">matheus corregiari developer</div>
+        <div class="item">dasjdioajsda</div>
+        <div class="item">lorsaidsaidjsaiodkmas adjajdnjka jasdnjasb</div>
+    </div>
+
+    <p>Flex-end</p>
+    <div class="container flex-end">
+        <div class="item">Matheus corregiari</div>
+        <div class="item">matheus corregiari</div>
+        <div class="item">matheus corregiari </div>
+        <div class="item">matheus corregiari developer</div>
+        <div class="item">dasjdioajsda</div>
+        <div class="item">lorsaidsaidjsaiodkmas adjajdnjka jasdnjasb</div>
+    </div>
+
+    <p>Space-around</p>
+    <div class="container space-around">
+        <div class="item">Matheus corregiari</div>
+        <div class="item">matheus corregiari</div>
+        <div class="item">matheus corregiari </div>
+        <div class="item">matheus corregiari developer</div>
+        <div class="item">dasjdioajsda</div>
+        <div class="item">lorsaidsaidjsaiodkmas adjajdnjka jasdnjasb</div>
+    </div>
+
+    <p>Space-between</p>
+    <div class="container space-between">
+        <div class="item">Matheus corregiari</div>
+        <div class="item">matheus corregiari</div>
+        <div class="item">matheus corregiari </div>
+        <div class="item">matheus corregiari developer</div>
+        <div class="item">dasjdioajsda</div>
+        <div class="item">lorsaidsaidjsaiodkmas adjajdnjka jasdnjasb</div>
+    </div>
+</body>
+</html>
