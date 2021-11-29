@@ -1,0 +1,49 @@
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20%;
+}
+
+#pageTitle{
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;     
+}
+
+#modeSelector{
+    padding: 10px;
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: dimgray;
+    color: white;
+}
+
+#modeSelector:hover{
+    background-color: black;
+}
+
+footer{
+    display: flex;
+    bottom: 0;
+    position:fixed;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;    
+    background-color: dimgray;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.dark-mode{
+    background-color: black;
+}
+.dark-mode #pageTitle{
+    color: white;
+}
